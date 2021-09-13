@@ -5,8 +5,8 @@ Version 9.20.0
 
 ## How to use:
 
-    Open the Flutter project and nested project in Android directory with Android Studio.
-    The main code for launching is located in the Android project, it does not have to be changed. As you see the code from Flutter project should launch the methods from android project.
+  Open the Flutter project and nested project in Android directory with Android Studio.
+  The main code for launching is located in the Android project, it does not have to be changed. As you see the code from Flutter project should launch the methods from android project.
 
 1. Add links to our maven-repository to build.gradle (project) in the Android project:
 
@@ -47,7 +47,7 @@ Version 9.20.0
         runApp(AnotherUI()); is called and show ad if it is ready to be shown.
 
     Application example:
-    Application demonstrate a typical example of showing ads when switching between screens. This is like a behavior computer games and advertisements can be shown at the moment of level up in a game, when there is a switch between screens. In a mobile applications, you can add ad display at the moment before the launch of the settings screen (new Activity or Fragment) of the application or etc. isloaded method place in android project 
+    Application demonstrate a typical example of showing ads when switching between screens. This is like a behavior computer games and advertisements can be shown at the moment of level up in a game, when there is a switch between screens. In a mobile applications, you can add ad display at the moment before the launch of the settings screen (new Activity or Fragment) of the application or etc. isloaded method place in android project
 
     You can download an example and review the functionality by looking at the comments in the code.
 
@@ -61,9 +61,9 @@ Version 9.20.0
 
 
 ## Как использовать:
-    Откройте с помощью Android Studio проект Flutter и вложенный проект в каталоге Android.
-    Основной код для запуска находится в проекте Android, его можно не менять. В проекте Flutter происходит запуск
-    методов из проекта Android.
+  Откройте с помощью Android Studio проект Flutter и вложенный проект в каталоге Android.
+  Основной код для запуска находится в проекте Android, его можно не менять. В проекте Flutter происходит запуск
+  методов из проекта Android.
 
 1.	Добавьте ссылку на наш maven-репозиторий в файл build.gradle (project) в проекте Android:
 
