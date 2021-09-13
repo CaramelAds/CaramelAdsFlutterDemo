@@ -5,8 +5,8 @@ Version 9.20.0
 
 ## How to use:
 
-  Open the Flutter project and nested project in Android directory with Android Studio.
-  The main code for launching is located in the Android project, it does not have to be changed. As you see the code from Flutter project should launch the methods from android project.
+Open the Flutter project and nested project in Android directory with Android Studio.
+The main code for launching is located in the Android project, it does not have to be changed. As you see the code from Flutter project should launch the methods from android project.
 
 1. Add links to our maven-repository to build.gradle (project) in the Android project:
 
@@ -61,9 +61,9 @@ Version 9.20.0
 
 
 ## Как использовать:
-  Откройте с помощью Android Studio проект Flutter и вложенный проект в каталоге Android.
-  Основной код для запуска находится в проекте Android, его можно не менять. В проекте Flutter происходит запуск
-  методов из проекта Android.
+Откройте с помощью Android Studio проект Flutter и вложенный проект в каталоге Android.
+Основной код для запуска находится в проекте Android, его можно не менять. В проекте Flutter происходит запуск
+методов из проекта Android.
 
 1.	Добавьте ссылку на наш maven-репозиторий в файл build.gradle (project) в проекте Android:
 
