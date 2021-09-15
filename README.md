@@ -57,11 +57,7 @@ The main code for launching is located in the Android project, it does not have 
 
 # Thank you for use our product!
 
-
 # RUS
-
-
-
 
 ## Как использовать:
 Откройте с помощью Android Studio проект Flutter и вложенный проект в каталоге Android.
@@ -70,7 +66,7 @@ The main code for launching is located in the Android project, it does not have 
 
 1.	Добавьте ссылку на наш maven-репозиторий в файл build.gradle (project) в проекте Android:
 
-          ...
+          ```
           allprojects {
             repositories {
               google()
@@ -79,11 +75,11 @@ The main code for launching is located in the Android project, it does not have 
               maven { url "https://android-sdk.is.com/" }
             }
           }
-          ...
+          ```
 
 2.	Добавьте зависимость и опции компилятора в build.gradle (app) в проекте Android:
 
-        ...
+        ```
         compileOptions {
            targetCompatibility JavaVersion.VERSION_1_8
            sourceCompatibility JavaVersion.VERSION_1_8
@@ -94,6 +90,7 @@ The main code for launching is located in the Android project, it does not have 
             implementation('com.caramelads:sdk:9.20.0')
             ...
           }
+          ```
 
 3.	Показ рекламы:
 
@@ -102,12 +99,14 @@ The main code for launching is located in the Android project, it does not have 
   	Если вы использовали наше sdk перед новыми правилами тайминга запросов рекламы, пожалуйста удалите старый код интеграции и старые proguard-rules.pro		(исключая места показа рекламы)
 
   	Загрузка рекламы и отображение:
-  	Для загрузки рекламы обратите внимание на пример, в классе TestUI(Flutter) происходит инициализация SDK путем запуска метода
-    caramelInitialize() это является обязательным. Обратите внимание на метод CaramelAds.setAdListener(...) расположенный в проекте Android, этот метод необходим для установки слушателей событий, в нем происходит вызов метода CaramelAds.cache(MainActivity.this) расположенного в проекте Android, в ответ на событие sdkReady(). Метод CaramelAds.cache(...) является обязательным и запускает кэширование рекламы перед показом, кэширование занимает определенное время. Далее в примере при нажатии на кнопку Карамели происходит вызов метода
+  	Для загрузки рекламы обратите внимание на пример, в классе ```TestUI(Flutter)``` происходит инициализация SDK путем запуска метода
+    ```caramelInitialize()``` это является обязательным. Обратите внимание на метод ```CaramelAds.setAdListener(...)``` расположенный в проекте Android, этот метод необходим для установки слушателей событий, в нем происходит вызов метода ```CaramelAds.cache(MainActivity.this)``` расположенного в проекте Android, в ответ на событие ```sdkReady()```. Метод ```CaramelAds.cache(...)``` является обязательным и запускает кэширование рекламы перед показом, кэширование занимает определенное время. Далее в примере при нажатии на кнопку Карамели происходит вызов метода
+    ```
     if(await platform.invokeMethod('isloaded').then((value) => value??false))
         runApp(AnotherUI());
+    ```
 
-    который позволит показать рекламу если она готова к показу. Метод isloaded расположен в проекте Android.
+    который позволит показать рекламу если она готова к показу. Метод ```isloaded``` расположен в проекте Android.
 
     Пример приложения:
     В приложении представлен типичный пример показа рекламы в момент переключения экранов. Такое поведение может соответствовать компьютерным играм и рекламу можно показать в момент перехода между уровнями игры, когда происходит переход между экранами. В мобильных приложениях можно добавить показ рекламы в момент перед запуском экрана настроек(новой Activity или Fragment) приложениях или подобных.
