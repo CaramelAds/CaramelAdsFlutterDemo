@@ -42,7 +42,7 @@ The main code for launching is located in the Android project, it does not have 
     If you use our sdk before new time-request rules pls remove old integration code and our old proguard-rules.pro (except ad showing places)
 
     Loading and show ads:
-    To load ads, see the example, in the TestUI(Flutter) class, the SDK is initialize by call the method caramelInitialize() this is required for right work of SDK. Let see to CaramelAds.setAdListener (...) method, from Android project which is required to set up event listeners, the CaramelAds.cache(MainActivity.this) method from the Android project is called by response to the sdkReady () event. The CaramelAds.cache (...) method is required for right work SDK and starts caching of the ad before show, caching is takes a certain amount of time. Further in the example, when you click on the Caramel button,  the method in if(await platform.invokeMethod('isloaded').then((value) => value??false))
+    To load ads, see the example, in the ```TestUI(Flutter)``` class, the SDK is initialize by call the method caramelInitialize() this is required for right work of SDK. Let see to CaramelAds.setAdListener (...) method, from Android project which is required to set up event listeners, the CaramelAds.cache(MainActivity.this) method from the Android project is called by response to the sdkReady () event. The CaramelAds.cache (...) method is required for right work SDK and starts caching of the ad before show, caching is takes a certain amount of time. Further in the example, when you click on the Caramel button,  the method in if(await platform.invokeMethod('isloaded').then((value) => value??false))
         runApp(AnotherUI()); is called and show ad if it is ready to be shown.
 
     Application example:
