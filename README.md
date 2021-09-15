@@ -1,8 +1,6 @@
 Version 9.20.0
 
 ## ENG ( RUS version below )
-
-
 ## How to use:
 
 Open the Flutter project and nested project in Android directory with Android Studio.
@@ -10,7 +8,7 @@ The main code for launching is located in the Android project, it does not have 
 
 1. Add links to our maven-repository to build.gradle (project) in the Android project:
 
-          ...
+          ```
           allprojects {
             repositories {
               google()
@@ -19,12 +17,12 @@ The main code for launching is located in the Android project, it does not have 
               maven { url "https://android-sdk.is.com/" }              
             }
           }
-          ...
+          ```
 
 
 2. Add compiler options and dependency to build.gradle (app) in the Android project:
 
-          ...
+          ```
           compileOptions {
              targetCompatibility JavaVersion.VERSION_1_8
              sourceCompatibility JavaVersion.VERSION_1_8
@@ -35,6 +33,7 @@ The main code for launching is located in the Android project, it does not have 
               implementation('com.caramelads:sdk:9.20.0')
               ...
             }
+            ```
 
 3. Scenarios of ads showing
 
