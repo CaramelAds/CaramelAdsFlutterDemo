@@ -1,4 +1,4 @@
-Version 9.20.0
+Version 10.0.0
 
 ## ENG ( RUS version below )
 ## How to use:
@@ -30,7 +30,7 @@ The main code for launching is located in the Android project, it does not have 
 
             dependencies {
               ...
-              implementation('com.caramelads:sdk:9.20.0')
+              implementation('com.caramelads:sdk:10.0.0')
               ...
             }
             ```
@@ -87,7 +87,7 @@ The main code for launching is located in the Android project, it does not have 
 
           dependencies {
             ...
-            implementation('com.caramelads:sdk:9.20.0')
+            implementation('com.caramelads:sdk:10.0.0')
             ...
           }
           ```
