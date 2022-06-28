@@ -1,4 +1,4 @@
-Version 10.1.0
+Version 10.6.0
 
 ## ENG ( RUS version below )
 ## How to use:
@@ -14,7 +14,8 @@ The main code for launching is located in the Android project, it does not have 
               google()
               jcenter()
               maven { url "https://maven.caramelads.com/repository/maven-releases" }
-              maven { url "https://android-sdk.is.com/" }              
+              maven { url "https://android-sdk.is.com/" }
+              maven { url  "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"}
             }
           }
           ```
@@ -30,7 +31,7 @@ The main code for launching is located in the Android project, it does not have 
 
             dependencies {
               ...
-              implementation('com.caramelads:sdk:10.1.0')
+              implementation('com.caramelads:sdk:10.6.0')
               ...
             }
             ```
@@ -64,7 +65,7 @@ The main code for launching is located in the Android project, it does not have 
 Основной код для запуска находится в проекте Android, его можно не менять. В проекте Flutter происходит запуск
 методов из проекта Android.
 
-1.	Добавьте ссылку на наш maven-репозиторий в файл build.gradle (project) в проекте Android:
+1. Добавьте ссылку на наш maven-репозиторий в файл build.gradle (project) в проекте Android:
 
           ```
           allprojects {
@@ -73,11 +74,12 @@ The main code for launching is located in the Android project, it does not have 
               jcenter()
               maven { url "https://maven.caramelads.com/repository/maven-releases" }
               maven { url "https://android-sdk.is.com/" }
+              maven { url  "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"}
             }
           }
           ```
 
-2.	Добавьте зависимость и опции компилятора в build.gradle (app) в проекте Android:
+3. Добавьте зависимость и опции компилятора в build.gradle (app) в проекте Android:
 
         ```
         compileOptions {
@@ -87,12 +89,12 @@ The main code for launching is located in the Android project, it does not have 
 
           dependencies {
             ...
-            implementation('com.caramelads:sdk:10.1.0')
+            implementation('com.caramelads:sdk:10.6.0')
             ...
           }
           ```
 
-3.	Показ рекламы:
+4. Показ рекламы:
 
   	Внимание:
 
