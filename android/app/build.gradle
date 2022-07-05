@@ -55,7 +55,7 @@ android {
 
     dependencies {
         //Caramel
-        implementation('com.caramelads:sdk:10.6.0')
+        implementation('com.caramelads:sdk:10.7.0.0')
     }
 }
 
