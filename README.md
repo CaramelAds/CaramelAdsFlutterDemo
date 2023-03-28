@@ -1,7 +1,11 @@
-Version 10.7.0.0
+<h1 align="center">Caramel 10.10.1.0</h1>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=E67E22&multiline=true&width=435&lines=Caramel+AD+for+Flutter+Android)](https://git.io/typing-svg)
+
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 
 ## ENG ( RUS version below )
-## How to use:
+### How to use:
 
 Open the Flutter project and nested project in Android directory with Android Studio.
 The main code for launching is located in the Android project, it does not have to be changed. As you see the code from Flutter project should launch the methods from android project.
@@ -33,7 +37,7 @@ The main code for launching is located in the Android project, it does not have 
 
             dependencies {
               ...
-              implementation('com.caramelads:sdk:10.7.0.0')
+              implementation('com.caramelads:sdk:10.10.1.0')
               ...
             }
             ```
@@ -58,11 +62,11 @@ The main code for launching is located in the Android project, it does not have 
     You can download an example and review the functionality by looking at the comments in the code.
 
 
-# Thank you for use our product!
+### Thank you for use our product!
 
-# RUS
+## RUS
 
-## Как использовать:
+### Как использовать:
 Откройте с помощью Android Studio проект Flutter и вложенный проект в каталоге Android.
 Основной код для запуска находится в проекте Android, его можно не менять. В проекте Flutter происходит запуск
 методов из проекта Android.
@@ -93,7 +97,7 @@ The main code for launching is located in the Android project, it does not have 
 
           dependencies {
             ...
-            implementation('com.caramelads:sdk:10.7.0.0')
+            implementation('com.caramelads:sdk:10.10.1.0')
             ...
           }
           ```
@@ -121,4 +125,4 @@ The main code for launching is located in the Android project, it does not have 
 
 
 
-# Спасибо, что используете наш продукт!
+### Спасибо, что используете наш продукт!
