@@ -43,13 +43,7 @@
             android:name="flutterEmbedding"
             android:value="2" />
 
-       <!--Start App-->
-       <receiver android:name="com.startapp.sdk.adsbase.remoteconfig.BootCompleteListener"
-           android:exported="false">
-           <intent-filter>
-               <action android:name="android.intent.action.BOOT_COMPLETED"/>
-           </intent-filter>
-       </receiver>
+
 
     </application>
 </manifest>
