@@ -25,14 +25,14 @@ apply plugin: 'com.android.application'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    compileSdkVersion 33
+    compileSdk 34
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
 //        applicationId "com.caramelads.carameldemoflutter.caramel_ads_flutter_demo"
         applicationId "com.networks.all"
-        minSdkVersion 19
-        targetSdkVersion 33
+        minSdkVersion 21
+        targetSdk 34
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         multiDexEnabled true
@@ -55,7 +55,7 @@ android {
 
     dependencies {
         //Caramel
-        implementation('com.caramelads:sdk:10.10.5.0')
+        implementation('com.caramelads:sdk:10.10.6.0')
     }
 }
 

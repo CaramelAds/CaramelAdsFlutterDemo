@@ -1,4 +1,4 @@
-<h1 align="center">Caramel 10.10.5.0</h1>
+<h1 align="center">Caramel 10.10.6.0</h1>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=E67E22&multiline=true&width=435&lines=Caramel+AD+for+Flutter+Android)](https://git.io/typing-svg)
 
@@ -37,7 +37,7 @@ The main code for launching is located in the Android project, it does not have 
 
             dependencies {
               ...
-              implementation('com.caramelads:sdk:10.10.5.0')
+              implementation('com.caramelads:sdk:10.10.6.0')
               ...
             }
             ```
@@ -152,7 +152,7 @@ Attention:
 
           dependencies {
             ...
-            implementation('com.caramelads:sdk:10.10.5.0')
+            implementation('com.caramelads:sdk:10.10.6.0')
             ...
           }
           ```
